@@ -30,7 +30,6 @@ Python 3.6 or above should be used, you’ll need to install the following libra
 |- disaster_categories.csv  # data to process<br>
 |- disaster_messages.csv  # data to process<br>
 |- process_data.py # ETL Pipeline script<br>
-|- DisasterResponse.db   # database to save clean data to<br>
 
 - models<br>
 |- train_classifier.py # ML Pipeline script<br>
