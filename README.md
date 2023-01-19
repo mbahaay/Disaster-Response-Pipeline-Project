@@ -20,7 +20,7 @@ Python 3.6 or above should be used, you’ll need to install the following libra
 
 ## File Descriptions
 
-app<br>
+- app<br>
 | - template<br>
 | |- master.html  # main page of web app<br>
 | |- go.html  # classification result page of web app<br>
@@ -54,9 +54,9 @@ app<br>
 
 ## Screenshots of the Web App
 
-![Screenshot 1]()
-![Screenshot 2]()
-![Screenshot 3]()
+![Screenshot 1](https://github.com/mbahaay/Disaster-Response-Pipeline-Project/blob/main/Screenshots/screenshot1.png)
+![Screenshot 2](https://github.com/mbahaay/Disaster-Response-Pipeline-Project/blob/main/Screenshots/screenshot2.png)
+![Screenshot 3](https://github.com/mbahaay/Disaster-Response-Pipeline-Project/blob/main/Screenshots/screenshot3.png)
 
 ## Acknowledgements
 
