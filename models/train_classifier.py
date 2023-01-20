@@ -6,7 +6,6 @@ import pickle
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
-from nltk import PorterStemmer
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -51,8 +50,7 @@ def tokenize(text):
     2-Tokinization
     3-Lowercasing
     4-Lemmatization
-    5-Stemming
-    6-Stop words removal 
+    5-Stop words removal 
     
     Args:
     text: str. the input message to be processed
@@ -72,14 +70,12 @@ def tokenize(text):
     tokens = word_tokenize(text)   # Split the message into tokens
     
     lemmatizer = WordNetLemmatizer()   # Create a WordNetLemmatizer
-    stemmer = PorterStemmer()    # Create a PorterStemmer
 
-    # Lemmatize then Stem the obtained tokens 
+    # Lemmatize the obtained tokens 
     clean_tokens = []
     for tok in tokens:
         lemmatized_token = lemmatizer.lemmatize(tok).lower().strip()
-        stemmed_token = stemmer.stem(lemmatized_token)
-        clean_tokens.append(stemmed_token)
+        clean_tokens.append(lemmatized_token)
         
     # Remove the stop words
     processed_tokens = [t for t in clean_tokens if t not in stopwords.words("english")]
